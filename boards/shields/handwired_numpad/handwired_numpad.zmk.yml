@@ -1,0 +1,8 @@
+file_format: "1"
+id: numpad_handwired
+name: Handwired Numpad
+type: shield
+url: https://github.com/anton-dev2803/zmk-config-numpad
+requires: [pro_micro]
+features:
+  - keys

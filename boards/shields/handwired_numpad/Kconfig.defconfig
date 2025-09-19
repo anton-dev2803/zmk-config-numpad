@@ -1,2 +1,6 @@
+if numpad-handwired
+
 config ZMK_KEYBOARD_NAME
     default "Handwired Numpad"
+
+endif
