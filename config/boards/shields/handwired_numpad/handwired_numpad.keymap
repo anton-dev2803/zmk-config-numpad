@@ -1,0 +1,22 @@
+/ {
+    keymap {
+        compatible = "zmk,keymap";
+
+        // Optional: Studio entsperren
+        default_layer {
+            bindings = <
+            // Row 0: 7 8 9  /
+            &kp KP_7    &kp KP_8    &kp KP_9    &kp KP_SLASH   &trans
+            // Row 1: 4 5 6  *
+            &kp KP_4    &kp KP_5    &kp KP_6    &kp KP_ASTERISK &trans
+            // Row 2: 1 2 3  -
+            &kp KP_1    &kp KP_2    &kp KP_3    &kp KP_MINUS   &trans
+            // Row 3: 0 . Enter +
+            &kp KP_0    &kp KP_DOT  &kp KP_ENTER &kp KP_PLUS   &studio_unlock
+            >;
+
+            // Matrix: 4 Reihen × 5 Spalten = 20 Positionen
+            // Falls du nur 4 Spalten hast, setze die 5. Spalte auf &trans.
+        };
+    };
+};
